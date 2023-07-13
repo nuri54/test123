@@ -1,5 +1,5 @@
 import static com.codeborne.selenide.Selenide.clearBrowserCookies;
-
+import static com.codeborne.selenide.Selenide.$;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
