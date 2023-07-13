@@ -3,6 +3,7 @@ import static com.codeborne.selenide.Selenide.clearBrowserCookies;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
+import static com.codeborne.selenide.Condition.visible;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
@@ -39,6 +40,8 @@ public class SternAutoTest {
   @Test
   public void sternAutoTest() {
     sternAutoPage.openStern("https://sternauto-gruppe.de/fahrzeugdetails?carId=0124150456");
+    // Made to fail the test
+    $("#accepcxyvcdsvc").shouldBe(visible);
     sternAutoPage.scrollToCalculator();
     sternAutoPage.iteratePrivateCalculator();
     sternAutoPage.iterateBusinessCalculator();
