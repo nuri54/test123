@@ -22,8 +22,8 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
-      - name: Build with Gradle
-        run: ./gradlew build
+      #- name: Build with Gradle
+       # run: ./gradlew build
 
       - name: Run Selenide Tests
         run: ./gradlew test
