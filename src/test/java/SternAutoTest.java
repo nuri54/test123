@@ -23,6 +23,7 @@ public class SternAutoTest {
 
   @Before
   public void setUp() {
+    Configuration.timeout = 10000;
     RemoteWebDriver driver = chrome.getWebDriver();
     WebDriverRunner.setWebDriver(driver);
   }
