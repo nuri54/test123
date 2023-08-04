@@ -1,20 +1,14 @@
-import static com.codeborne.selenide.Selenide.clearBrowserCookies;
-import static com.codeborne.selenide.Selenide.$;
+
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
-import static com.codeborne.selenide.Condition.visible;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
+import com.codeborne.selenide.junit.TextReport;
 import org.junit.Test;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testcontainers.containers.BrowserWebDriverContainer;
-import org.testcontainers.utility.DockerImageName;
-
 
 public class SternAutoTest {
 
@@ -31,6 +25,7 @@ public class SternAutoTest {
     Configuration.timeout = 10000;
     RemoteWebDriver driver = chrome.getWebDriver();
     WebDriverRunner.setWebDriver(driver);
+
   }
 
   @After
