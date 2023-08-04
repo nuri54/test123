@@ -17,7 +17,7 @@ import org.testcontainers.utility.DockerImageName;
 
 
 public class SternAutoTest {
-  /*
+
   @Rule
   public BrowserWebDriverContainer chrome =
       new BrowserWebDriverContainer(Abi.chromeImage())
@@ -35,7 +35,7 @@ public class SternAutoTest {
     WebDriverRunner.closeWebDriver();
   }
 
-   */
+
 
   SternAutoPage sternAutoPage = new SternAutoPage();
 
