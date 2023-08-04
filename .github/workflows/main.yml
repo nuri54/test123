@@ -23,8 +23,8 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
-      #- name: Build with Gradle
-       # run: ./gradlew build
+      - name: exec rights
+        run: chmod +x gradlew
 
       - name: Run Selenide Tests
-        run: chmod +x gradlew && ./gradlew test
+        run: ./gradlew test
