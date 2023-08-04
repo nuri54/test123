@@ -23,7 +23,7 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
-      - name: exec rights
+      - name: Make Gradle Wrapper executable
         run: chmod +x gradlew
 
       - name: Run Selenide Tests
