@@ -40,8 +40,6 @@ public class SternAutoTest {
   @Test
   public void sternAutoTest() {
     sternAutoPage.openStern("https://sternauto-gruppe.de/fahrzeugdetails?carId=0124150456");
-    // Made to fail the test
-    $("#accepcxyvcdsvc").shouldBe(visible);
     sternAutoPage.scrollToCalculator();
     sternAutoPage.iteratePrivateCalculator();
     sternAutoPage.iterateBusinessCalculator();
