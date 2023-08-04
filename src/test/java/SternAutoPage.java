@@ -24,9 +24,9 @@ public class SternAutoPage {
   private final SelenideElement leasingLoadLabel_business = $(
       byText("Mtl. Leasingrate (exkl. MwSt.)"));
 
-  // Changed from € to $ to get a failing test
+
   private void check_price_exists(SelenideElement element) {
-    element.shouldHave(Condition.partialText("$"));
+    element.shouldHave(Condition.partialText("€"));
   }
 
   public void openStern(String link) {
