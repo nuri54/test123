@@ -9,13 +9,13 @@ import static com.codeborne.selenide.Selenide.open;
 public class SternAutoPage {
 
   private final SelenideElement constent_button = $("#acceptCookies");
-  private final SelenideElement customer_type_private = $("label[for='GB[customer_type]-private']");
+  private final SelenideElement customer_type_private = $("label[for='QB[customer_type]-private']");
   private final SelenideElement customer_type_business = $(
-      "label[for='GB[customer_type]-business']");
-  private final SelenideElement plus3 = $("label[for='GB[calculation_type]-balloon']");
-  private final SelenideElement leasing = $("label[for='GB[calculation_type]-leasing']");
+      "label[for='QB[customer_type]-business']");
+  private final SelenideElement plus3 = $("label[for='QB[calculation_type]-balloon']");
+  private final SelenideElement leasing = $("label[for='QB[calculation_type]-leasing']");
   private final SelenideElement financing = $(
-      "label[for='GB[calculation_type]-financing']");
+      "label[for='QB[calculation_type]-financing']");
   private final SelenideElement price = $("div.col-lg-6.resultValue");
   private final SelenideElement plus3LoadLabel = $(byText("Mtl. Plus3-Finanzierungsrate"));
   private final SelenideElement financingLoadLabel = $(byText("Mtl. Finanzierungsrate"));
