@@ -23,6 +23,9 @@ public class SternAutoTest {
       new BrowserWebDriverContainer(Abi.chromeImage())
           .withCapabilities(new ChromeOptions());
 
+  @Rule
+  public TextReport textReport = new TextReport();
+
   @Before
   public void setUp() {
     Configuration.timeout = 10000;
