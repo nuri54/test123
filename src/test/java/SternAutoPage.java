@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class SternAutoPage {
 
-  private final SelenideElement constent_button = $("#acceptCookies");
+  private final SelenideElement constent_button = $("#akcceptCookies");
   private final SelenideElement customer_type_private = $("label[for='QB[customer_type]-private']");
   private final SelenideElement customer_type_business = $(
       "label[for='QB[customer_type]-business']");
