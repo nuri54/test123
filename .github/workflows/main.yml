@@ -28,6 +28,8 @@ jobs:
         
       - name: Build Project
         run: ./gradlew assemble testClasses
-        
+
+        ## Excludes the logs from pulling images
       - name: Run Selenide Tests
-        run: ./gradlew test
+        run: ./gradlew test 2>&1 | grep -vE '\[docker-java-stream-(416180839|-1729979775)\]'
+
